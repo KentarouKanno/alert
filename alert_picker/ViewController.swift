@@ -25,8 +25,9 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
   
   @IBAction func customalertbtr(_ sender: Any) {
    let customAlert = CustomAlert(frame: CGRect(x: 0.0, y: 0.0, width: 350 , height: 275))
+    customAlert.layer.cornerRadius = 30
     customAlert.center = self.view.center
-    customAlert.backgroundColor = .orange
+    customAlert.backgroundColor = .clear
    
     // ViewControllerの参照をセット
     customAlert.delegate = self
@@ -142,8 +143,9 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     @IBAction func text(_ sender: Any) {
         
         let customAlert = numberViewController(frame: CGRect(x: 0.0, y: 0.0, width: 250 , height: 300))
+        customAlert.layer.cornerRadius = 30
         customAlert.center = self.view.center
-        customAlert.backgroundColor = .orange
+        customAlert.backgroundColor = .clear
         
         // ViewControllerの参照をセット
         customAlert.delegate = self
