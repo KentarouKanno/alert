@@ -131,6 +131,10 @@ class numberViewController: UIView {
         ctxt.isHidden = true
         ktxt.isHidden = true
         
+         ptxt.isEnabled = false
+         ftxt.isEnabled = false
+         ctxt.isEnabled = false
+         ktxt.isEnabled = false
         
         view.frame = self.bounds
         self.addSubview(view)
@@ -144,11 +148,6 @@ class numberViewController: UIView {
             ftxt.isHidden = true
             ctxt.isHidden = true
             ktxt.isHidden = true
-            
-            ptxt.isEnabled = false
-            ftxt.isEnabled = false
-            ctxt.isEnabled = false
-            ktxt.isEnabled = false
             
             print("1")
         case 1:
