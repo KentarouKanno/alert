@@ -145,6 +145,10 @@ class numberViewController: UIView {
             ctxt.isHidden = true
             ktxt.isHidden = true
             
+            ptxt.isEnabled = false
+            ftxt.isEnabled = false
+            ctxt.isEnabled = false
+            ktxt.isEnabled = false
             
             print("1")
         case 1:
@@ -176,42 +180,44 @@ class numberViewController: UIView {
         }
     }
     
-    func addnumber(number: String) {
-        var textnumber = ptxt.text!
-        textnumber = textnumber + number
-        ptxt.text = textnumber
-        let textA = ptxt.text!
-        let doubleA = Float(textA)! * 4
-        protein.text = "P:" + textnumber + "g /" + "\(doubleA)" + "kcal"
-        //protein.text = "P: " + textnumber
-    }
+        func addnumber(number: String) {
+            var textnumber = ptxt.text!
+            textnumber = textnumber + number
+            ptxt.text = textnumber
+            let textA = ptxt.text!
+            let doubleA = Double(textA)! * 4
+            protein.text = "P:" + textnumber + "g /" + "\(doubleA)" + "kcal"
+            //protein.text = "P: " + textnumber
+        }
     
-    func addnumber2(number2: String) {
-        var textnumber2 = ftxt.text!
-        textnumber2 = textnumber2 + number2
-        ftxt.text = textnumber2
-        /*let textB = ftxt.text!
-        let doubleB = Float(textB)! * 9*/
-        fat.text = "F: " + textnumber2
-    }
+        func addnumber2(number2: String) {
+            var textnumber2 = ftxt.text!
+            textnumber2 = textnumber2 + number2
+            ftxt.text = textnumber2
+            /*let textB = ftxt.text!
+             let doubleB = Float(textB)! * 9*/
+            fat.text = "F: " + textnumber2
+        }
     
-    func addnumber3(number3: String) {
-        var textnumber3 = ctxt.text!
-        textnumber3 = textnumber3 + number3
-        ctxt.text = textnumber3
-       /* let textC = ctxt.text!
-        let doubleC = Float(textC)! * 4*/
-        carbo.text = "C" + textnumber3
-    }
-    func addnumber4(number4: String) {
-        var textnumber4 = ktxt.text!
-        textnumber4 = textnumber4 + number4
-        ktxt.text = textnumber4
-        total.text = textnumber4 + "kcal"
-    }
+        func addnumber3(number3: String) {
+            var textnumber3 = ctxt.text!
+            textnumber3 = textnumber3 + number3
+            ctxt.text = textnumber3
+            /* let textC = ctxt.text!
+             let doubleC = Float(textC)! * 4*/
+            carbo.text = "C" + textnumber3
+        }
+        func addnumber4(number4: String) {
+            var textnumber4 = ktxt.text!
+            textnumber4 = textnumber4 + number4
+            ktxt.text = textnumber4
+            total.text = textnumber4 + "kcal"
+        }
     
     
     @IBAction func one(_ sender: Any) {
+        
+        
         addnumber(number: "1")
         addnumber2(number2: "1")
         addnumber3(number3: "1")
@@ -221,57 +227,91 @@ class numberViewController: UIView {
     
     @IBAction func two(_ sender: Any) {
         addnumber(number: "2")
+        addnumber2(number2: "2")
+        addnumber3(number3: "2")
+        addnumber4(number4: "2")
        
     }
     
     @IBAction func three(_ sender: Any) {
         addnumber(number: "3")
+        addnumber2(number2: "3")
+        addnumber3(number3: "3")
+        addnumber4(number4: "3")
+        
         
     }
     
     @IBAction func four(_ sender: Any) {
         addnumber(number: "4")
+        addnumber2(number2: "4")
+        addnumber3(number3: "4")
+        addnumber4(number4: "4")
         
     }
     
     @IBAction func five(_ sender: Any) {
         addnumber(number: "5")
+        addnumber2(number2: "5")
+        addnumber3(number3: "5")
+        addnumber4(number4: "5")
        
     }
     
     @IBAction func six(_ sender: Any) {
         addnumber(number: "6")
+        addnumber2(number2: "6")
+        addnumber3(number3: "6")
+        addnumber4(number4: "6")
 
     }
     
     @IBAction func seven(_ sender: Any) {
         addnumber(number: "7")
+        addnumber2(number2: "7")
+        addnumber3(number3: "7")
+        addnumber4(number4: "7")
 
     }
     
     @IBAction func eight(_ sender: Any) {
         addnumber(number: "8")
+        addnumber2(number2: "8")
+        addnumber3(number3: "8")
+        addnumber4(number4: "8")
         
     }
     
     @IBAction func nine(_ sender: Any) {
         addnumber(number: "9")
+        addnumber2(number2: "9")
+        addnumber3(number3: "9")
+        addnumber4(number4: "9")
         
     }
     
     @IBAction func zero(_ sender: Any) {
         addnumber(number: "0")
+        addnumber2(number2: "0")
+        addnumber3(number3: "0")
+        addnumber4(number4: "0")
         
     }
     
     @IBAction func point(_ sender: Any) {
        
         addnumber(number: ".")
+        addnumber2(number2: ".")
+        addnumber3(number3: ".")
+        addnumber4(number4: ".")
        
     }
     
     @IBAction func clear(_ sender: Any) {
-        ptxt.text! = ""
+        addnumber(number: "")
+        //ftxt.text! = ""
+        //ctxt.text! = ""
+        //ktxt.text! = ""
     }
     @IBAction func OK(_ sender: Any) {
     }
