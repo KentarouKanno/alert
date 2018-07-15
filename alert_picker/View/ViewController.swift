@@ -125,6 +125,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     }
     return datalist2[row]
   }
+
   
   // PickerViewの項目選択時
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -142,7 +143,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
   }
     @IBAction func text(_ sender: Any) {
         
-        let customAlert = numberViewController(frame: CGRect(x: 0.0, y: 0.0, width: 250 , height: 300))
+        let customAlert = NumberView(frame: CGRect(x: 0.0, y: 0.0, width: 250 , height: 300))
         customAlert.layer.cornerRadius = 30
         customAlert.center = self.view.center
         customAlert.backgroundColor = .clear

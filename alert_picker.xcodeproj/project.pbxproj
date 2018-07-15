@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC47804B20EF46F100DD8F36 /* numberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC47804920EF46F100DD8F36 /* numberViewController.swift */; };
-		EC47804C20EF46F100DD8F36 /* numberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC47804A20EF46F100DD8F36 /* numberViewController.xib */; };
+		3672C20920F6C5AA0030EC6C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3672C20820F6C5AA0030EC6C /* UIView+.swift */; };
+		367E2BE120FAED8700597E85 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E2BE020FAED8700597E85 /* String+.swift */; };
+		EC47804B20EF46F100DD8F36 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC47804920EF46F100DD8F36 /* NumberView.swift */; };
+		EC47804C20EF46F100DD8F36 /* NumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC47804A20EF46F100DD8F36 /* NumberView.xib */; };
 		EC5D56741FF72D7000C3EDB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5D56731FF72D7000C3EDB3 /* AppDelegate.swift */; };
 		EC5D56761FF72D7000C3EDB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5D56751FF72D7000C3EDB3 /* ViewController.swift */; };
 		EC5D56791FF72D7000C3EDB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5D56771FF72D7000C3EDB3 /* Main.storyboard */; };
@@ -20,8 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EC47804920EF46F100DD8F36 /* numberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numberViewController.swift; sourceTree = "<group>"; };
-		EC47804A20EF46F100DD8F36 /* numberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = numberViewController.xib; sourceTree = "<group>"; };
+		3672C20820F6C5AA0030EC6C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		367E2BE020FAED8700597E85 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		EC47804920EF46F100DD8F36 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		EC47804A20EF46F100DD8F36 /* NumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberView.xib; sourceTree = "<group>"; };
 		EC5D56701FF72D7000C3EDB3 /* alert_picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alert_picker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5D56731FF72D7000C3EDB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC5D56751FF72D7000C3EDB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3672C20520F6BF7B0030EC6C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EC5D56731FF72D7000C3EDB3 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3672C20620F6BF8E0030EC6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC5D56751FF72D7000C3EDB3 /* ViewController.swift */,
+				EC47804920EF46F100DD8F36 /* NumberView.swift */,
+				EC47804A20EF46F100DD8F36 /* NumberView.xib */,
+				ECD245C22036DD960015081A /* CustomAlert.swift */,
+				EC5D568A1FFDB26800C3EDB3 /* CustomAlert.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3672C20720F6C5930030EC6C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3672C20820F6C5AA0030EC6C /* UIView+.swift */,
+				367E2BE020FAED8700597E85 /* String+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		EC5D56671FF72D7000C3EDB3 = {
 			isa = PBXGroup;
 			children = (
@@ -64,15 +97,12 @@
 		EC5D56721FF72D7000C3EDB3 /* alert_picker */ = {
 			isa = PBXGroup;
 			children = (
-				EC47804920EF46F100DD8F36 /* numberViewController.swift */,
-				EC47804A20EF46F100DD8F36 /* numberViewController.xib */,
-				EC5D56731FF72D7000C3EDB3 /* AppDelegate.swift */,
-				EC5D56751FF72D7000C3EDB3 /* ViewController.swift */,
+				3672C20720F6C5930030EC6C /* Extension */,
+				3672C20520F6BF7B0030EC6C /* AppDelegate */,
+				3672C20620F6BF8E0030EC6C /* View */,
 				EC5D56771FF72D7000C3EDB3 /* Main.storyboard */,
-				ECD245C22036DD960015081A /* CustomAlert.swift */,
-				EC5D568A1FFDB26800C3EDB3 /* CustomAlert.xib */,
-				EC5D567D1FF72D7000C3EDB3 /* Assets.xcassets */,
 				EC5D567F1FF72D7000C3EDB3 /* LaunchScreen.storyboard */,
+				EC5D567D1FF72D7000C3EDB3 /* Assets.xcassets */,
 				EC5D56821FF72D7000C3EDB3 /* Info.plist */,
 				EC5D567A1FF72D7000C3EDB3 /* alert_picker.xcdatamodeld */,
 			);
@@ -142,7 +172,7 @@
 				EC5D56811FF72D7000C3EDB3 /* LaunchScreen.storyboard in Resources */,
 				EC5D567E1FF72D7000C3EDB3 /* Assets.xcassets in Resources */,
 				EC5D56791FF72D7000C3EDB3 /* Main.storyboard in Resources */,
-				EC47804C20EF46F100DD8F36 /* numberViewController.xib in Resources */,
+				EC47804C20EF46F100DD8F36 /* NumberView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,10 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC47804B20EF46F100DD8F36 /* numberViewController.swift in Sources */,
+				3672C20920F6C5AA0030EC6C /* UIView+.swift in Sources */,
+				EC47804B20EF46F100DD8F36 /* NumberView.swift in Sources */,
 				EC5D56761FF72D7000C3EDB3 /* ViewController.swift in Sources */,
 				EC5D56741FF72D7000C3EDB3 /* AppDelegate.swift in Sources */,
 				EC5D567C1FF72D7000C3EDB3 /* alert_picker.xcdatamodeld in Sources */,
+				367E2BE120FAED8700597E85 /* String+.swift in Sources */,
 				ECD245C32036DD960015081A /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HY9CXX38QG;
 				INFOPLIST_FILE = alert_picker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.workout2.alert-picker";
@@ -309,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HY9CXX38QG;
 				INFOPLIST_FILE = alert_picker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.workout2.alert-picker";
